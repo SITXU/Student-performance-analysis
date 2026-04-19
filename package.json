@@ -1,0 +1,15 @@
+{
+  "name": "spars",
+  "version": "1.0.0",
+  "description": "Student Performance Analysis & Reporting System",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node index.js",
+    "client": "cd client && npx react-scripts start",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
